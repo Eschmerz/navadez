@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left-section">
+            <h1>Nombre del Producto</h1>
+            <p>Descripción del producto. Aquí puedes agregar más detalles sobre el producto.</p>
+            <button id="add-to-list">Agregar a la Lista</button>
+        </div>
+        <div class="central-section">
+            <img id="main-image" src="../Bamba Chair - Black _ Boucle Beige.jpg" alt="Producto">
+        </div>
+        <div class="right-section">
+            <div class="additional-images">
+                <img src="../Crimson Coffee Table Set.jpg" alt="Producto 1" onclick="changeImage('producto1.jpg')">
+                <img src="../Rio 3-Piece Sectional - DESTROYED BLACK _ 101.jpg" alt="Producto 2" onclick="changeImage('producto2.jpg')">
+                <img src="../Luxury Minimalist Black Leather Sofa.jpg" alt="Producto 3" onclick="changeImage('producto3.jpg')">
+                <img src="../Crimson Coffee Table Set.jpg" alt="Producto 1" onclick="changeImage('producto1.jpg')">
+                <img src="../Rio 3-Piece Sectional - DESTROYED BLACK _ 101.jpg" alt="Producto 2" onclick="changeImage('producto2.jpg')">
+                <img src="../Luxury Minimalist Black Leather Sofa.jpg" alt="Producto 3" onclick="changeImage('producto3.jpg')">
+            </div>
+            <div class="dimensions">
+                <h2>Dimensiones</h2>
+                <p>Altura: 30 cm</p>
+                <p>Ancho: 20 cm</p>
+                <p>Profundidad: 15 cm</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script>
+      // script.js
+function changeImage(imageSrc) {
+    document.getElementById('main-image').src = imageSrc;
+}
+
+document.getElementById('add-to-list').addEventListener('click', function() {
+    alert('Producto agregado a la lista');
+});
+
+    </script>
+</body>
+</html>

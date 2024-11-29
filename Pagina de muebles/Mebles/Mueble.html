@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muebles Elegantes</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">MueblesElegantes</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#acerca">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="search-icon">
+      <img src="../Crimson Coffee Table Set.jpg" alt="Buscar">
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <h1>Elegancia y confort en cada pieza</h1>
+    <p>Descubre nuestra amplia gama de muebles diseñados para tu hogar.</p>
+    <button onclick="scrollToSection('productos')">Explorar Colección</button>
+  </section>
+
+  <!-- Sección de Productos -->
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="../Crimson Coffee Table Set.jpg" alt="Sofá">
+        <h3>Sofá Moderno</h3>
+        <p>Un diseño único para tu sala.</p>
+        <p class="precio">$10,000 MXN</p>
+        <button>Comprar ahora</button>
+      </div>
+  </section>
+
+  <!-- Formulario de Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo Electrónico" required>
+      <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 MueblesElegantes. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+      <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+      <a href="#"><img src="pinterest-icon.svg" alt="Pinterest"></a>
+    </div>
+  </footer>
+  
+  <script>
+    // Navegar a una sección
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+  </script>
+</body>
+</html>

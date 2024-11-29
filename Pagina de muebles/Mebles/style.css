@@ -1,0 +1,148 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #28292b;
+  }
+  
+  /* Encabezado */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1d1d;
+    padding: 15px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    color: #d4af37;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .search-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    background: url('../Luxury\ Minimalist\ Black\ Leather\ Sofa.jpg') no-repeat center center/cover;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    background-color: #d4af37;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  /* Productos */
+  .productos {
+    padding: 20px;
+    background-color: #393a3b;
+  }
+  
+  .productos h2 {
+    text-align: center;
+  }
+  
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .producto {
+    background-color: #1e1f1e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height:100vh;
+    width: 100vh;
+  }
+  
+  .producto h3, .producto p {
+    margin: 10px 0;
+  }
+  
+  .producto .precio {
+    font-weight: bold;
+    color: #d4af37;
+  }
+  
+  /* Contacto */
+  .contacto {
+    padding: 20px;
+    background-color: #000000;
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contacto input, .contacto textarea, .contacto button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contacto button {
+    background-color: #d4af37;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Pie de página */
+  footer {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #000000;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    margin: 0 10px;
+  }
+  
